@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogToDoList</class>
+ <widget class="QDialog" name="DialogToDoList">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>271</width>
+    <height>359</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ToDo Liste</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>251</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="layoutPrincipal">
+    <item>
+     <widget class="QListView" name="ListViewTodo"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="layoutBoutons">
+      <item>
+       <widget class="QPushButton" name="buttonReferencer">
+        <property name="text">
+         <string>Référencer</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonMediter">
+        <property name="text">
+         <string>A méditer...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonJeter">
+        <property name="text">
+         <string>Jeter</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="buttonDefinirActions">
+      <property name="text">
+       <string>Définir les étapes</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="buttonDeleguer">
+      <property name="text">
+       <string>Déléguer</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="buttonTerminer">
+      <property name="text">
+       <string>Terminer</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

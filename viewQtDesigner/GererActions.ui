@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogGererActions</class>
+ <widget class="QDialog" name="DialogGererActions">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>515</width>
+    <height>505</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gérer les étapes</string>
+  </property>
+  <widget class="QListView" name="listeEtape">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>12</y>
+     <width>479</width>
+     <height>261</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>281</y>
+     <width>479</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="layoutEtape">
+    <item>
+     <layout class="QFormLayout" name="layoutSaisie">
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelOrdre">
+        <property name="text">
+         <string>Ordre</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="textOrdre"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="labelEtape">
+        <property name="text">
+         <string>Etape</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QTextEdit" name="textEtape"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="labelDate">
+        <property name="text">
+         <string>Date</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QDateTimeEdit" name="inputDate"/>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QPushButton" name="buttonAjouterModifier">
+        <property name="text">
+         <string>Ajouter</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="buttonCHeck">
+      <property name="text">
+       <string>Fait</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonDialog">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>468</y>
+     <width>481</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonDialog</sender>
+   <signal>accepted()</signal>
+   <receiver>DialogGererActions</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonDialog</sender>
+   <signal>rejected()</signal>
+   <receiver>DialogGererActions</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
