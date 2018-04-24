@@ -23,16 +23,6 @@
     </rect>
    </property>
    <layout class="QFormLayout" name="layoutMain">
-    <item row="1" column="0">
-     <widget class="QLabel" name="labelIdee">
-      <property name="text">
-       <string>Idée :</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QPlainTextEdit" name="textIdee"/>
-    </item>
     <item row="0" column="0">
      <widget class="QLabel" name="labelDateDesc">
       <property name="text">
@@ -48,26 +38,36 @@
      </widget>
     </item>
     <item row="2" column="0">
+     <widget class="QLabel" name="labelIdee">
+      <property name="text">
+       <string>Idée :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPlainTextEdit" name="textIdee"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="labelDelegue">
+      <property name="text">
+       <string>Délégué  à:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="textDelegue"/>
+    </item>
+    <item row="4" column="0">
      <widget class="QLabel" name="labelCommentaire">
       <property name="text">
        <string>Commentaire :</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
+    <item row="4" column="1">
      <widget class="QPlainTextEdit" name="textCommentaire"/>
     </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="labelActions">
-      <property name="text">
-       <string>Actions</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QListView" name="listViewActions"/>
-    </item>
-    <item row="4" column="1">
+    <item row="5" column="1">
      <widget class="QDialogButtonBox" name="buttonBox">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -76,6 +76,16 @@
        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
       </property>
      </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="labelEmplacement">
+      <property name="text">
+       <string>Emplacement :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="comboEtat"/>
     </item>
    </layout>
   </widget>

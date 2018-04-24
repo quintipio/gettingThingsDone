@@ -48,8 +48,8 @@
      <rect>
       <x>370</x>
       <y>130</y>
-      <width>79</width>
-      <height>101</height>
+      <width>111</width>
+      <height>140</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="layoutEtatNonAction">
@@ -73,6 +73,13 @@
       </widget>
      </item>
      <item>
+      <widget class="QLabel" name="labelIdeeAttenteCorbeille">
+       <property name="text">
+        <string>(x) idée en attente</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QPushButton" name="buttonEnattente">
        <property name="enabled">
         <bool>true</bool>
@@ -83,9 +90,23 @@
       </widget>
      </item>
      <item>
+      <widget class="QLabel" name="labelIdeeAttenteIncuabateur">
+       <property name="text">
+        <string>(x) idée en attente</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QPushButton" name="buttonArchive">
        <property name="text">
         <string>Archivage</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelIdeeAttenteArchivage">
+       <property name="text">
+        <string>(x) idée en attente</string>
        </property>
       </widget>
      </item>
