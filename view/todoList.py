@@ -11,16 +11,19 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_DialogToDoList(object):
     def setupUi(self, DialogToDoList):
         DialogToDoList.setObjectName("DialogToDoList")
-        DialogToDoList.resize(271, 359)
+        DialogToDoList.setWindowModality(QtCore.Qt.WindowModal)
+        DialogToDoList.resize(340, 359)
+        DialogToDoList.setMinimumSize(QtCore.QSize(340, 359))
+        DialogToDoList.setMaximumSize(QtCore.QSize(340, 359))
         self.verticalLayoutWidget = QtWidgets.QWidget(DialogToDoList)
-        self.verticalLayoutWidget.setGeometry(QtCore.QRect(10, 10, 251, 341))
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(10, 10, 320, 341))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
         self.layoutPrincipal = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
         self.layoutPrincipal.setContentsMargins(0, 0, 0, 0)
         self.layoutPrincipal.setObjectName("layoutPrincipal")
-        self.tableViewListTodo = QtWidgets.QTableView(self.verticalLayoutWidget)
-        self.tableViewListTodo.setObjectName("tableViewListTodo")
-        self.layoutPrincipal.addWidget(self.tableViewListTodo)
+        self.toDoListListView = QtWidgets.QListView(self.verticalLayoutWidget)
+        self.toDoListListView.setObjectName("toDoListListView")
+        self.layoutPrincipal.addWidget(self.toDoListListView)
         self.layoutBoutons = QtWidgets.QHBoxLayout()
         self.layoutBoutons.setObjectName("layoutBoutons")
         self.buttonReferencer = QtWidgets.QPushButton(self.verticalLayoutWidget)
@@ -44,6 +47,7 @@ class Ui_DialogToDoList(object):
         self.layoutPrincipal.addWidget(self.buttonTerminer)
 
         self.retranslateUi(DialogToDoList)
+        self.buttonTerminer.clicked.connect(DialogToDoList.close)
         QtCore.QMetaObject.connectSlotsByName(DialogToDoList)
 
     def retranslateUi(self, DialogToDoList):

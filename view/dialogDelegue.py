@@ -12,6 +12,10 @@ class Ui_DialogDelegue(object):
     def setupUi(self, DialogDelegue):
         DialogDelegue.setObjectName("DialogDelegue")
         DialogDelegue.resize(184, 107)
+        DialogDelegue.setMinimumSize(QtCore.QSize(184, 107))
+        DialogDelegue.setMaximumSize(QtCore.QSize(184, 107))
+        DialogDelegue.setSizeGripEnabled(True)
+        DialogDelegue.setModal(True)
         self.verticalLayoutWidget = QtWidgets.QWidget(DialogDelegue)
         self.verticalLayoutWidget.setGeometry(QtCore.QRect(10, 10, 160, 80))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")

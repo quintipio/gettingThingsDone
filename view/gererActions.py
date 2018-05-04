@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'GererActions.ui'
+# Form implementation generated from reading ui file 'gererActions.ui'
 #
 # Created by: PyQt5 UI code generator 5.10.1
 #
@@ -12,6 +12,10 @@ class Ui_DialogGererActions(object):
     def setupUi(self, DialogGererActions):
         DialogGererActions.setObjectName("DialogGererActions")
         DialogGererActions.resize(515, 505)
+        DialogGererActions.setMinimumSize(QtCore.QSize(515, 505))
+        DialogGererActions.setMaximumSize(QtCore.QSize(515, 505))
+        DialogGererActions.setSizeGripEnabled(True)
+        DialogGererActions.setModal(True)
         self.listeEtape = QtWidgets.QListView(DialogGererActions)
         self.listeEtape.setGeometry(QtCore.QRect(13, 12, 479, 261))
         self.listeEtape.setObjectName("listeEtape")
@@ -39,6 +43,7 @@ class Ui_DialogGererActions(object):
         self.labelDate.setObjectName("labelDate")
         self.layoutSaisie.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.labelDate)
         self.inputDate = QtWidgets.QDateTimeEdit(self.horizontalLayoutWidget)
+        self.inputDate.setCalendarPopup(True)
         self.inputDate.setObjectName("inputDate")
         self.layoutSaisie.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.inputDate)
         self.buttonAjouterModifier = QtWidgets.QPushButton(self.horizontalLayoutWidget)

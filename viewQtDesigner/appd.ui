@@ -7,11 +7,29 @@
     <x>0</x>
     <y>0</y>
     <width>264</width>
-    <height>135</height>
+    <height>128</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>264</width>
+    <height>128</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>264</width>
+    <height>128</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>A propos de...</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
   </property>
   <widget class="QWidget" name="formLayoutWidget">
    <property name="geometry">
@@ -90,5 +108,22 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>buttonFermer</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogAppd</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>130</x>
+     <y>98</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>131</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

@@ -12,6 +12,8 @@ class Ui_WindowPrincipale(object):
     def setupUi(self, WindowPrincipale):
         WindowPrincipale.setObjectName("WindowPrincipale")
         WindowPrincipale.resize(857, 643)
+        WindowPrincipale.setMinimumSize(QtCore.QSize(857, 643))
+        WindowPrincipale.setMaximumSize(QtCore.QSize(857, 643))
         self.centralwidget = QtWidgets.QWidget(WindowPrincipale)
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
@@ -174,6 +176,7 @@ class Ui_WindowPrincipale(object):
         self.menubar.addAction(self.menuAide.menuAction())
 
         self.retranslateUi(WindowPrincipale)
+        self.actionQuitter.triggered.connect(WindowPrincipale.close)
         QtCore.QMetaObject.connectSlotsByName(WindowPrincipale)
 
     def retranslateUi(self, WindowPrincipale):

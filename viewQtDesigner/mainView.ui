@@ -10,6 +10,18 @@
     <height>643</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>857</width>
+    <height>643</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>857</width>
+    <height>643</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Getting things done</string>
   </property>
@@ -398,5 +410,22 @@
   </action>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>actionQuitter</sender>
+   <signal>triggered()</signal>
+   <receiver>WindowPrincipale</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>428</x>
+     <y>321</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

@@ -10,8 +10,26 @@
     <height>107</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>184</width>
+    <height>107</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>184</width>
+    <height>107</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Dialog</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
   </property>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">

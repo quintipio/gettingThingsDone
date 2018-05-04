@@ -11,7 +11,11 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_DialogAppd(object):
     def setupUi(self, DialogAppd):
         DialogAppd.setObjectName("DialogAppd")
-        DialogAppd.resize(264, 135)
+        DialogAppd.resize(264, 128)
+        DialogAppd.setMinimumSize(QtCore.QSize(264, 128))
+        DialogAppd.setMaximumSize(QtCore.QSize(264, 128))
+        DialogAppd.setSizeGripEnabled(True)
+        DialogAppd.setModal(True)
         self.formLayoutWidget = QtWidgets.QWidget(DialogAppd)
         self.formLayoutWidget.setGeometry(QtCore.QRect(10, 10, 241, 111))
         self.formLayoutWidget.setObjectName("formLayoutWidget")
@@ -51,6 +55,7 @@ class Ui_DialogAppd(object):
         self.layoutAppd.setWidget(4, QtWidgets.QFormLayout.SpanningRole, self.buttonFermer)
 
         self.retranslateUi(DialogAppd)
+        self.buttonFermer.clicked.connect(DialogAppd.close)
         QtCore.QMetaObject.connectSlotsByName(DialogAppd)
 
     def retranslateUi(self, DialogAppd):
