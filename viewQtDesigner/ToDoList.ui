@@ -42,7 +42,14 @@
    </property>
    <layout class="QVBoxLayout" name="layoutPrincipal">
     <item>
-     <widget class="QListView" name="toDoListListView"/>
+     <widget class="QListView" name="toDoListListView">
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
     </item>
     <item>
      <layout class="QHBoxLayout" name="layoutBoutons">

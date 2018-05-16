@@ -4,12 +4,10 @@ from PyQt5.QtWidgets import QCompleter
 
 from models import Idee
 from view.dialogDelegue import Ui_DialogDelegue
-from controller import dialogDelegueController as controller
+from controller import dialogDelegueController as ControllerView
 
 
 class DialogDelegueViewChild(Ui_DialogDelegue):
-
-    test = ["Ulysse","tyty", "toto"]
 
     def __init__(self):
         Ui_DialogDelegue.__init__(self)
@@ -17,6 +15,12 @@ class DialogDelegueViewChild(Ui_DialogDelegue):
         self.completer_text_delegue: QCompleter = None
 
     def setup_ui_with_idee(self, dialog_delegue, idee: Idee):
+        """
+        Affiche les éléments de la fenêtre
+        :param dialog_delegue: la boite de dialogue
+        :param idee: l'idée devant être délégué
+        :return:
+        """
         Ui_DialogDelegue.setupUi(self, dialog_delegue)
 
         self.completer_text_delegue = QCompleter(self.textDelegue)
@@ -31,8 +35,16 @@ class DialogDelegueViewChild(Ui_DialogDelegue):
         self.idee = idee
 
     def __autocomplete_delegue(self):
-        result = controller.rechercher_personne_delegue(self.textDelegue.text())
+        """
+        Event d'autocomplete de la saisie de délègue
+        :return:
+        """
+        result = ControllerView.rechercher_personne_delegue(self.textDelegue.text())
         self.completer_text_delegue.setModel(QStringListModel(result))
 
     def __action_delegue(self):
-        controller.valider_delegation(self.idee, self.textDelegue.text())
+        """
+        Délègue une idée
+        :return:
+        """
+        ControllerView.valider_delegation(self.idee, self.textDelegue.text())

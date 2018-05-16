@@ -32,7 +32,7 @@
       <x>69</x>
       <y>169</y>
       <width>160</width>
-      <height>51</height>
+      <height>63</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="layoutToDoList">
@@ -45,6 +45,16 @@
      </item>
      <item>
       <widget class="QLabel" name="labelCompteurIdeeTodo">
+       <property name="text">
+        <string>X idées en attente</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelCompteurIdee_bis">
        <property name="text">
         <string>X idées en attente</string>
        </property>
@@ -142,7 +152,21 @@
       </widget>
      </item>
      <item>
-      <widget class="QColumnView" name="columnDelegue"/>
+      <widget class="QListView" name="listDelegue">
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="buttonTermineDelegue">
+       <property name="text">
+        <string>Marqué comme terminé</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -164,7 +188,21 @@
       </widget>
      </item>
      <item>
-      <widget class="QColumnView" name="columnAFaire"/>
+      <widget class="QListView" name="listTodo">
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="buttonTerminerTodo">
+       <property name="text">
+        <string>Marqué comme terminé</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -186,7 +224,21 @@
       </widget>
      </item>
      <item>
-      <widget class="QColumnView" name="columnPlanning"/>
+      <widget class="QListView" name="listPlanifier">
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="buttonTerminerPlanifier">
+       <property name="text">
+        <string>Marqué comme terminé</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -274,9 +326,9 @@
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>220</y>
+      <y>240</y>
       <width>20</width>
-      <height>61</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="frameShadow">
@@ -362,14 +414,27 @@
    <widget class="QPushButton" name="buttonTacehFini">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>560</y>
+      <x>340</x>
+      <y>570</y>
       <width>141</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
      <string>Voir les taches terminées</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelDateToday">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

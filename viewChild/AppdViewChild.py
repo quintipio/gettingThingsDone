@@ -5,6 +5,11 @@ from constantes import *
 class AppdChild(Ui_DialogAppd):
 
     def setupUi(self, dialog_appd):
+        """
+        Chare la fenêtre
+        :param dialog_appd: la boite de dialogue
+        :return:
+        """
         Ui_DialogAppd.setupUi(self, dialog_appd)
 
         self.buttonFermer.clicked.connect(dialog_appd.close)
