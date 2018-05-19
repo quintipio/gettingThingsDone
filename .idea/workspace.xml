@@ -1,44 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3ac5dcd-c794-4ca4-8030-c86f6d999b86" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constantes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/MainViewController.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/TodoListController.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/dialogDelegueController.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/editerIdeeController.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/gererActionController.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/listeIdeeController.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/viewChild/AppdViewChild.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/viewChild/DialogDelegueViewChild.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/viewChild/EditerIdeeViewChild.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/viewChild/GererActionViewChild.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/viewChild/ListIdeeViewChild.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/viewChild/MainViewChild.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/viewChild/TodoListViewChlid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gettingThingsDone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gettingThingsDone.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/options.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/appd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/dialogDelegue.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/dialogDelegue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/editerIdee.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/editerIdee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/gererActions.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/gererActions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/listeIdee.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/listeIdee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/mainView.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/mainView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/todoList.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/todoList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viewQtDesigner/EditerIdee.ui" beforeDir="false" afterPath="$PROJECT_DIR$/viewQtDesigner/EditerIdee.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viewQtDesigner/GererActions.ui" beforeDir="false" afterPath="$PROJECT_DIR$/viewQtDesigner/GererActions.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viewQtDesigner/ListeIdee.ui" beforeDir="false" afterPath="$PROJECT_DIR$/viewQtDesigner/ListeIdee.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viewQtDesigner/ToDoList.ui" beforeDir="false" afterPath="$PROJECT_DIR$/viewQtDesigner/ToDoList.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viewQtDesigner/appd.ui" beforeDir="false" afterPath="$PROJECT_DIR$/viewQtDesigner/appd.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viewQtDesigner/dialogDelegue.ui" beforeDir="false" afterPath="$PROJECT_DIR$/viewQtDesigner/dialogDelegue.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viewQtDesigner/mainView.ui" beforeDir="false" afterPath="$PROJECT_DIR$/viewQtDesigner/mainView.ui" afterDir="false" />
-    </list>
+    <list default="true" id="d3ac5dcd-c794-4ca4-8030-c86f6d999b86" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,10 +11,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/gettingThingsDone$main.coverage" NAME="main Coverage Results" MODIFIED="1524553812757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gettingThingsDone$main.coverage" NAME="main Coverage Results" MODIFIED="1526488901878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -137,6 +100,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,9 +122,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -197,25 +160,6 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="gettingThingsDone" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -234,6 +178,25 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="gettingThingsDone" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -275,6 +238,7 @@
       <updated>1523523386566</updated>
       <workItem from="1523523399102" duration="2744000" />
       <workItem from="1524553068614" duration="1286000" />
+      <workItem from="1526488817394" duration="96000" />
     </task>
     <task id="LOCAL-00001" summary="Model et vue">
       <created>1524554347851</created>
@@ -287,42 +251,42 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4030000" />
+    <option name="totallyTimeSpent" value="4126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25208333" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51666665" side_tool="true" visible="true" weight="0.39915967" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49270833" weight="0.32878152" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4875" weight="0.32878152" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286638" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48333332" weight="0.39915967" />
-      <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info id="Learn" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5170576" side_tool="true" visible="true" weight="0.39870688" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4875" weight="0.32878152" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286638" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25479743" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Learn" order="3" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48294243" weight="0.39870688" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Python Console" order="8" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49270833" weight="0.32878152" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,14 +424,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../sdk/Python/Lib/datetime.py">
+    <entry file="file://$PROJECT_DIR$/../../SDK/Python/Lib/datetime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10382">
           <caret line="1359" column="6" selection-start-line="1359" selection-start-column="6" selection-end-line="1359" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../sdk/Python/Lib/codecs.py">
+    <entry file="file://$PROJECT_DIR$/../../SDK/Python/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="573">
           <caret line="310" selection-start-line="310" selection-end-line="310" />
@@ -489,20 +453,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/1992104736/PyQt5/QtGui/QStandardItem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="226" column="8" selection-start-line="226" selection-start-column="8" selection-end-line="226" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/1992104736/PyQt5/QtCore/Qt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="981" column="4" selection-start-line="981" selection-start-column="4" selection-end-line="981" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/1992104736/PyQt5/QtGui/QStandardItem.py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/1992104736/PyQt5/QtCore/Qt.py" />
     <entry file="file://$PROJECT_DIR$/view/dialogDelegue.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-190">
@@ -510,13 +462,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/datetime.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="212" column="8" selection-start-line="212" selection-start-column="8" selection-end-line="212" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/datetime.pyi" />
     <entry file="file://$PROJECT_DIR$/view/gererActions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="507">
@@ -524,13 +470,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/1992104736/PyQt5/QtWidgets/QAbstractButton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="143" column="8" selection-start-line="143" selection-start-column="8" selection-end-line="143" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/1992104736/PyQt5/QtWidgets/QAbstractButton.py" />
     <entry file="file://$PROJECT_DIR$/view/listeIdee.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -553,13 +493,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py" />
     <entry file="file://$PROJECT_DIR$/controller/dialogDelegueController.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -567,20 +501,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/gererActionController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/listeIdeeController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/gererActionController.py" />
+    <entry file="file://$PROJECT_DIR$/controller/listeIdeeController.py" />
     <entry file="file://$PROJECT_DIR$/controller/MainViewController.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
@@ -602,13 +524,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewChild/ListIdeeViewChild.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="66" column="63" lean-forward="true" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/viewChild/ListIdeeViewChild.py" />
     <entry file="file://$PROJECT_DIR$/viewChild/TodoListViewChlid.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1496">
@@ -616,13 +532,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewChild/GererActionViewChild.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="19" lean-forward="true" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/viewChild/GererActionViewChild.py" />
     <entry file="file://$PROJECT_DIR$/viewChild/AppdViewChild.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -663,30 +573,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="180" column="33" selection-start-line="180" selection-start-column="33" selection-end-line="180" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewChild/EditerIdeeViewChild.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/editerIdeeController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../sdk/Python/Lib/site-packages/pony/orm/core.py">
+    <entry file="file://$PROJECT_DIR$/viewChild/EditerIdeeViewChild.py" />
+    <entry file="file://$PROJECT_DIR$/controller/editerIdeeController.py" />
+    <entry file="file://$PROJECT_DIR$/../../SDK/Python/Lib/site-packages/pony/orm/core.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="462" selection-start-line="462" selection-end-line="462" />

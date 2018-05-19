@@ -88,7 +88,8 @@ class EditerIdeeViewChild(Ui_DialogEditerIdee):
         """
         result = controllerDelegue.rechercher_personne_delegue(self.textDelegue.text())
         self.completer_text_delegue.setModel(QStringListModel(result))
-        self.__select_etat_combobox(Etat.DELEGUER)
+        if self.textDelegue.text():
+            self.__select_etat_combobox(Etat.DELEGUER)
 
     def __editer_action(self):
         """
@@ -104,7 +105,8 @@ class EditerIdeeViewChild(Ui_DialogEditerIdee):
             error.exec_()
             return
 
-        if self.textDelegue.text() and self.comboEtat.currentText() != Etat.DELEGUER.name:
+        if (self.textDelegue.text() and self.comboEtat.currentText() != Etat.DELEGUER.name) or \
+                (not self.textDelegue.text() and self.comboEtat.currentText() == Etat.DELEGUER.name):
             error = QMessageBox()
             error.setIcon(QMessageBox.Warning)
             error.setText("Si la tâche est déléguée, son état doit être à l'état délégué")

@@ -201,6 +201,8 @@ def modifier_idee_db(id_idee: int, idee: str, delegue: str, commentaire: str, et
 
     if delegue:
         delegue_idee(id_idee, delegue)
+    else:
+        idee_obj.delegue = None
 
 
 @db_session
@@ -330,7 +332,8 @@ def get_idee_delegue():
     retour = []
     data = select(i for i in Idee if i.etat == Etat.DELEGUER.value)
     for e in data:
-        e.delegue.nom
+        if e.delegue:
+            e.delegue.nom
         retour.append(e)
     return retour
 

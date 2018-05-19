@@ -143,6 +143,9 @@ class GererActionViewChild(Ui_DialogGererActions):
             if self.etape_en_cours.dateExecution:
                 self.checkBoxDate.setChecked(True)
                 self.inputDate.setDate(self.etape_en_cours.dateExecution)
+            else:
+                self.checkBoxDate.setChecked(False)
+                self.inputDate.setDate(datetime.today())
             self.__afficher_masquer_date()
 
     def __reset_champs(self):
