@@ -4,7 +4,7 @@ import sys
 from PyQt5 import QtWidgets
 import pony.orm.dbproviders.sqlite
 from models import open_db, delete_idee_perime, Etat
-from viewChild.MainViewChild import MainViewChild
+from viewChild.mainViewChild import MainViewChild
 
 
 def main():

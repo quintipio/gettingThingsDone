@@ -4,13 +4,13 @@ from view.mainView import Ui_WindowPrincipale
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import Qt
 
-from viewChild.AppdViewChild import AppdChild
-from viewChild.EditerIdeeViewChild import EditerIdeeViewChild
-from viewChild.ListIdeeViewChild import ListeIdeeViewChild
-from viewChild.TodoListViewChlid import TodoListViewChlid
+from viewChild.appdViewChild import AppdChild
+from viewChild.editerIdeeViewChild import EditerIdeeViewChild
+from viewChild.listIdeeViewChild import ListeIdeeViewChild
+from viewChild.todoListViewChlid import TodoListViewChlid
 from models import Etat
 import datetime
-from controller import MainViewController as ControllerView
+from controller import mainViewController as ControllerView
 
 
 class MainViewChild(Ui_WindowPrincipale):

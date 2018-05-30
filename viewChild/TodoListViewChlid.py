@@ -3,9 +3,10 @@ from PyQt5.QtGui import QStandardItemModel, QStandardItem
 from PyQt5 import QtWidgets
 
 from view.todoList import Ui_DialogToDoList
-from controller import TodoListController as ControllerView
-from viewChild.DialogDelegueViewChild import DialogDelegueViewChild
-from viewChild.GererActionViewChild import GererActionViewChild
+from controller import todoListController as ControllerView
+from viewChild.dialogDelegueViewChild import DialogDelegueViewChild
+from viewChild.editerIdeeViewChild import EditerIdeeViewChild
+from viewChild.gererActionViewChild import GererActionViewChild
 
 
 class TodoListViewChlid(Ui_DialogToDoList):
@@ -13,7 +14,7 @@ class TodoListViewChlid(Ui_DialogToDoList):
     RoleIdee = Qt.UserRole+1
 
     def __init__(self):
-        self.selectedIdee = None
+        self.selected_idee = None
         self.dialog = None
 
     def setupUi(self, dialog_todo_list):
@@ -24,6 +25,7 @@ class TodoListViewChlid(Ui_DialogToDoList):
         """
         Ui_DialogToDoList.setupUi(self, dialog_todo_list)
         self.toDoListListView.clicked.connect(self.__select_element_listbox)
+        self.toDoListListView.doubleClicked.connect(self.__open_idee)
         self.buttonJeter.clicked.connect(self.__jeter_idee)
         self.buttonReferencer.clicked.connect(self.__classer_idee)
         self.buttonMediter.clicked.connect(self.__incuber_idee)
@@ -54,14 +56,14 @@ class TodoListViewChlid(Ui_DialogToDoList):
         :param index:
         :return:
         """
-        self.selectedIdee = index.data(self.RoleIdee)
+        self.selected_idee = index.data(self.RoleIdee)
 
     def __classer_idee(self):
         """
         Classe une idée
         :return:
         """
-        ControllerView.idee_etat_classer(self.selectedIdee)
+        ControllerView.idee_etat_classer(self.selected_idee)
         self.__charger_todo_list()
 
     def __jeter_idee(self):
@@ -69,7 +71,7 @@ class TodoListViewChlid(Ui_DialogToDoList):
         Met à la corbeille une idée
         :return:
         """
-        ControllerView.idee_etat_corbeille(self.selectedIdee)
+        ControllerView.idee_etat_corbeille(self.selected_idee)
         self.__charger_todo_list()
 
     def __incuber_idee(self):
@@ -77,7 +79,7 @@ class TodoListViewChlid(Ui_DialogToDoList):
         Met à l'état incuber une idée
         :return:
         """
-        ControllerView.idee_etat_incuber(self.selectedIdee)
+        ControllerView.idee_etat_incuber(self.selected_idee)
         self.__charger_todo_list()
 
     def __delegue_idee(self):
@@ -85,10 +87,10 @@ class TodoListViewChlid(Ui_DialogToDoList):
         Délègue une idée
         :return:
         """
-        if self.selectedIdee:
+        if self.selected_idee:
             dialog_delegue = QtWidgets.QDialog(self.dialog)
             ui = DialogDelegueViewChild()
-            ui.setup_ui_with_idee(dialog_delegue, self.selectedIdee)
+            ui.setup_ui_with_idee(dialog_delegue, self.selected_idee)
             retour = dialog_delegue.exec_()
             if retour:
                 self.__charger_todo_list()
@@ -98,9 +100,21 @@ class TodoListViewChlid(Ui_DialogToDoList):
         Ouvre la dialog de gestion des étapes d'une idée
         :return:
         """
-        if self.selectedIdee:
+        if self.selected_idee:
             dialog_etapes = QtWidgets.QDialog(self.dialog)
             ui = GererActionViewChild()
-            ui.setup_ui_with_idee(dialog_etapes, self.selectedIdee)
+            ui.setup_ui_with_idee(dialog_etapes, self.selected_idee)
             dialog_etapes.exec_()
+            self.__charger_todo_list()
+
+    def __open_idee(self):
+        """
+        Ouvre une idée à modifier
+        :return:
+        """
+        if self.selected_idee:
+            dialog_editer_idee = QtWidgets.QDialog(self.dialog)
+            ui = EditerIdeeViewChild()
+            ui.setup_ui_with_idee(dialog_editer_idee, self.selected_idee)
+            dialog_editer_idee.exec_()
             self.__charger_todo_list()

@@ -3,6 +3,7 @@ from enum import Enum
 
 from pony.orm import *
 
+
 """
 ENUM
 """
@@ -384,3 +385,27 @@ def verif_fin_etapes_marque_idee_termine(etape: Etape):
     nb_etape_non_fait = count(e for e in Etape if not e.fait and e.idee.id == etape.idee.id)
     if nb_etape_non_fait == 0:
         changer_etat_idee(etape.idee.id, Etat.TERMINE)
+
+
+@db_session
+def supprimer_etape_db(etape: Etape):
+    """
+    Efface une étape de la base de donnée
+    :param etape: l'étape à effacer
+    :return:
+    """
+    id_idee = Etape[etape.id].idee.id
+    Etape[etape.id].delete()
+    __check_ordre_etape_idee(id_idee)
+
+
+@db_session
+def inverser_ordre_etape_db(etape_a: Etape, etape_b: Etape):
+    """
+       Inverse l'ordre de deux étapes
+       :param etape_a: une étape
+       :param etape_b: l'autre étape
+       :return:
+       """
+    Etape[etape_a.id].order = etape_b.order
+    Etape[etape_b.id].order = etape_a.order

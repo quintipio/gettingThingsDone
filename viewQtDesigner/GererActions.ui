@@ -6,19 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>515</width>
+    <width>578</width>
     <height>505</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>515</width>
+    <width>578</width>
     <height>505</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>515</width>
+    <width>578</width>
     <height>505</height>
    </size>
   </property>
@@ -34,9 +34,9 @@
   <widget class="QListView" name="listeEtape">
    <property name="geometry">
     <rect>
-     <x>13</x>
-     <y>12</y>
-     <width>479</width>
+     <x>90</x>
+     <y>20</y>
+     <width>471</width>
      <height>261</height>
     </rect>
    </property>
@@ -52,7 +52,7 @@
     <rect>
      <x>13</x>
      <y>281</y>
-     <width>479</width>
+     <width>551</width>
      <height>181</height>
     </rect>
    </property>
@@ -160,7 +160,7 @@
     <rect>
      <x>13</x>
      <y>468</y>
-     <width>481</width>
+     <width>551</width>
      <height>31</height>
     </rect>
    </property>
@@ -169,6 +169,45 @@
    </property>
    <property name="standardButtons">
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonMonter">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>71</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Monter</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonDescendre">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>71</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Descendre</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonSupprimer">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>71</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Supprimer</string>
    </property>
   </widget>
  </widget>

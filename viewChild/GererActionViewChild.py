@@ -18,6 +18,7 @@ class GererActionViewChild(Ui_DialogGererActions):
         self.etape_en_cours: Etape = None
         self.dialog = None
         self.ordre_en_cours = 1
+        self.liste_etape_obj = []
 
     def setup_ui_with_idee(self, dialog_etapes, idee):
         """
@@ -32,6 +33,9 @@ class GererActionViewChild(Ui_DialogGererActions):
         self.buttonAjouterModifier.clicked.connect(self.__valider_etape)
         self.buttonChangerEtat.clicked.connect(self.__changer_etat)
         self.checkBoxDate.clicked.connect(self.__afficher_masquer_date)
+        self.buttonMonter.clicked.connect(self.__monter_etape)
+        self.buttonDescendre.clicked.connect(self.__descendre_etape)
+        self.buttonSupprimer.clicked.connect(self.__supprimer_etape)
 
         self.dialog = dialog_etapes
         self.selected_idee = idee
@@ -113,11 +117,15 @@ class GererActionViewChild(Ui_DialogGererActions):
         etapes = ControllerView.charger_etapes(self.selected_idee)
         model = QStandardItemModel(self.listeEtape)
         model.clear()
+        self.liste_etape_obj.clear()
 
         item_base = QStandardItem("Nouvelle étape")
         model.appendRow(item_base)
 
         for etape in etapes:
+
+            self.liste_etape_obj.append(etape)
+
             text_item = etape.texte
             if etape.fait:
                 text_item = text_item + " - FAIT"
@@ -161,3 +169,36 @@ class GererActionViewChild(Ui_DialogGererActions):
         self.textEtape.setText("")
         self.checkBoxDate.setChecked(False)
         self.__afficher_masquer_date()
+
+    def __monter_etape(self):
+        """
+        Inverse l'ordre de l'étape avec celle au dessus d'elle
+        :return:
+        """
+        if self.etape_en_cours and self.etape_en_cours.order > 1:
+            etape_filtre = [i for i in self.liste_etape_obj if i.order == self.etape_en_cours.order-1]
+            if etape_filtre:
+                ControllerView.inverser_ordre_etape_db(self.etape_en_cours, etape_filtre[0])
+                self.__charger_etapes()
+
+    def __descendre_etape(self):
+        """
+                Inverse l'ordre de l'étape avec celle au dessous d'elle
+                :return:
+                """
+        if  self.etape_en_cours and self.etape_en_cours.order < max(i.order for i in self.liste_etape_obj):
+            etape_filtre = [i for i in self.liste_etape_obj if i.order == self.etape_en_cours.order + 1]
+            if etape_filtre:
+                ControllerView.inverser_ordre_etape_db(self.etape_en_cours, etape_filtre[0])
+                self.__charger_etapes()
+
+    def __supprimer_etape(self):
+        """
+        Supprime une étape de la liste
+        :return:
+        """
+        if self.etape_en_cours:
+            ControllerView.supprimer_etape(self.etape_en_cours)
+            self.__charger_etapes()
+            self.ordre_en_cours = self.listeEtape.model().rowCount()
+

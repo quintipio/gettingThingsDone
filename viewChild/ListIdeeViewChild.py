@@ -5,7 +5,7 @@ from PyQt5 import QtWidgets
 from models import Etat
 from view.listeIdee import Ui_DialogListeIdee
 from controller import listeIdeeController as ControllerView
-from viewChild.EditerIdeeViewChild import EditerIdeeViewChild
+from viewChild.editerIdeeViewChild import EditerIdeeViewChild
 
 
 class ListeIdeeViewChild(Ui_DialogListeIdee):

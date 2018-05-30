@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from models import Idee, get_etapes_idee, ajouter_modifier_etape, inverser_etat_etape, Etape
+from models import Idee, get_etapes_idee, ajouter_modifier_etape, inverser_etat_etape, Etape, supprimer_etape_db, inverser_ordre_etape_db
 
 
 def charger_etapes(idee: Idee):
@@ -40,4 +40,28 @@ def ajouter_etape(idee: Idee, ordre: int, texte: str, fait=False, date=None):
 
 
 def inverser_etat(etape: Etape):
+    """
+    Inverse l'état d'une étape de faire à fiat ou vice versa
+    :param etape: l'étape dotn on change l'état
+    :return:
+    """
     inverser_etat_etape(etape.id)
+
+
+def supprimer_etape(etape : Etape):
+    """
+    Supprime une étape de la base
+    :param etape: l'étape à supprimer
+    :return:
+    """
+    supprimer_etape_db(etape)
+
+
+def inverser_ordres_etapes(etape_a: Etape, etape_b: Etape):
+    """
+    Inverse l'ordre de deux étapes
+    :param etape_a: une étape
+    :param etape_b: l'autre étape
+    :return:
+    """
+    inverser_ordre_etape_db(etape_a, etape_b)
