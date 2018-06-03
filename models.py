@@ -1,3 +1,4 @@
+import os
 from datetime import datetime, timedelta
 from enum import Enum
 
@@ -58,7 +59,7 @@ def __get_database_file(chemmin_option: str):
     :param chemmin_option: le chemin ou se trouve la base de donnée
     :return: le chemin complet de la BDD
     """
-    return chemmin_option + "\\" + "gtd.sqlite"
+    return chemmin_option + ("\\" if os.name == 'nt' else "/") + "gtd.sqlite"
 
 
 def open_db(chemin_option: str):
